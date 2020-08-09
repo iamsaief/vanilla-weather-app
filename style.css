@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+html {
+  font-size: 20px;
+}
+body {
+  background-color: #10141f;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+.container {
+  width: 300px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.app-title {
+  padding: 10px 0;
+}
+.weather-container {
+  background-color: #eef0f7;
+}
+.notification {
+  background-color: #f8d7da;
+  display: none;
+}
+.notification p {
+  color: #721c24;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+}
+.temp-value p {
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.temp-value p span {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+.temp-desc {
+  font-size: 2rem;
+}
+.location {
+  font-size: 1rem;
+  letter-spacing: -0.5px;
+  padding-bottom: 10px;
+}
