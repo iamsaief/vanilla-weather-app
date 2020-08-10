@@ -67,16 +67,21 @@ function getSearchData(searchTxt) {
 	const cors = "https://cors-anywhere.herokuapp.com/";
 	let api = `${cors}http://api.openweathermap.org/data/2.5/weather?q=${searchTxt},${searchTxt}&appid=${KEY}`;
 
-	fetch(api)
-		.then((res) => {
-			if (res.ok) return res.json();
-			else throw new Error("Invalid city name");
-		})
-		.then((data) => {
-			getDataFromApi(data);
-		})
-		.then(() => displayWeatherData())
-		.catch((error) => showError(error));
+	if (searchEl.value !== "") {
+		fetch(api)
+			.then((res) => {
+				if (res.ok) return res.json();
+				else throw new Error("Invalid city name");
+			})
+			.then((data) => {
+				getDataFromApi(data);
+			})
+			.then(() => displayWeatherData())
+			.catch((error) => showError(error));
+	} else {
+		const error = new Error("Please enter a city name");
+		showError(error);
+	}
 }
 
 // Get API data and store in object
@@ -130,15 +135,7 @@ function showDateTime() {
 			? datetime.getHours() - 12
 			: datetime.getHours();
 	const am_pm = datetime.getHours() >= 12 ? "PM" : "AM";
-	console.log(
-		hours,
-		datetime.getMinutes(),
-		am_pm,
-		days[datetime.getDay()],
-		months[datetime.getMonth()],
-		datetime.getDate(),
-		datetime.getFullYear()
-	);
+
 	// 12:31pm, Monday, August 10, 2020
 	return `
 		${hours}:${datetime.getMinutes()} ${am_pm}, 
