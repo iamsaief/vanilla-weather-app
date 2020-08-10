@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App - Fetch API</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App - Fetch API</title>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+		<!-- Google Fonts -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="app-title">
-        <p>Weather</p>
-      </div>
-      <div class="notification"></div>
-      <div class="weather-container">
-        <div class="weather-icon">
-          <img src="./icons/unknown.png" alt="weather icon" />
-        </div>
-        <div class="temp-value">
-          <p>- &deg;<span>C</span></p>
-        </div>
-        <div class="temp-desc">
-          <p>-</p>
-        </div>
-        <div class="location">
-          <p>-</p>
-        </div>
-      </div>
-    </div>
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="app-title">
+				<p>Weather App</p>
+			</div>
+			<div class="notification"></div>
+			<div class="weather-container">
+				<div class="location">
+					<p>-</p>
+				</div>
+				<div class="datetime">
+					<p>-</p>
+				</div>
+				<div class="weather-icon">
+					<img src="./icons/unknown.png" alt="weather icon" />
+				</div>
+				<div class="temp-value">
+					<p>- &deg;<span>C</span></p>
+				</div>
+				<div class="temp-desc">
+					<p>-</p>
+				</div>
+			</div>
+			<div class="search-location">
+				<input type="text" placeholder="Search city" />
+			</div>
+		</div>
 
-    <!-- Script JS -->
-    <script src="./script.js"></script>
-  </body>
+		<!-- Script JS -->
+		<script src="./script.js"></script>
+	</body>
 </html>

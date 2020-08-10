@@ -1,60 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Quicksand", sans-serif;
 }
 html {
-  font-size: 20px;
+	font-size: 20px;
 }
 body {
-  background-color: #10141f;
-  display: grid;
-  place-content: center;
-  height: 100vh;
-  padding: 15px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -1.5px;
+	background-color: #10141f;
+	display: grid;
+	place-content: center;
+	height: 100vh;
+	padding: 15px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	letter-spacing: -1.5px;
 }
 .container {
-  width: 300px;
-  background: #fff;
-  text-align: center;
-  border-radius: 10px;
-  padding-bottom: 30px;
+	width: 300px;
+	background: #fff;
+	text-align: center;
+	border-radius: 10px;
 }
 .app-title {
-  padding: 10px 0;
+	font-size: 2rem;
+	padding: 10px 0;
 }
 .weather-container {
-  background-color: #eef0f7;
+	background-color: #eef0f7;
+	padding: 10px;
 }
 .notification {
-  background-color: #f8d7da;
-  display: none;
+	background-color: #f8d7da;
+	display: none;
 }
 .notification p {
-  color: #721c24;
-  font-size: 1rem;
-  margin: 0;
-  text-align: center;
-  padding: 10px 0;
+	color: #721c24;
+	font-size: 0.8rem;
+	letter-spacing: -0.5px;
+	margin: 0;
+	text-align: center;
+	padding: 5px 0;
 }
 .temp-value p {
-  cursor: pointer;
-  font-size: 3rem;
-  font-weight: 700;
+	cursor: pointer;
+	font-size: 3rem;
+	font-weight: 700;
 }
 .temp-value p span {
-  font-size: 2.2rem;
-  font-weight: 500;
+	font-size: 2.2rem;
+	font-weight: 500;
 }
 .temp-desc {
-  font-size: 2rem;
+	font-size: 1.7rem;
 }
 .location {
-  font-size: 1rem;
-  letter-spacing: -0.5px;
-  padding-bottom: 10px;
+	font-size: 1.4rem;
+	letter-spacing: -0.5px;
+}
+.search-location {
+	padding: 20px 30px;
+}
+.search-location input {
+	width: 100%;
+	padding: 5px;
+	font-size: 1rem;
+	text-align: center;
+	background: transparent;
+	outline: none;
+	border: 1px solid #d7dcec;
+	border-radius: 4px;
+	transition: 0.3s;
+}
+.search-location input:focus {
+	box-shadow: 0 0 0px 2px #e4e7f1;
+}
+
+.datetime {
+	font-size: 0.75rem;
+	letter-spacing: -0.5px;
+	font-weight: 400;
 }
